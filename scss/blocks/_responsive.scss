@@ -1,0 +1,75 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 98%;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 98%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1{
+    font-size: 45px;
+  }
+  .btn {
+    margin-top: 100px;
+    font-size: 60px;
+    padding: 20px 70px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  a,
+  p,
+  output,
+  h3,
+  .flexbox h3,
+  .container p,
+  .nav__link,
+  .form__label,
+  .form__item {
+    font-size: 30px;
+  }
+  .form__item {
+    padding: 5%;
+  }
+  .dodano{
+    padding: 4%;
+  }
+  
+  .zaglowek__img {
+    width: 5%;
+  }
+  .nav__item {
+    margin: 15px;
+    width: 80%;
+  }
+  .form,
+  .zaglowek,
+  .opis,
+  .content_main,
+  .footer-width,
+  .container {
+    padding: 50px 2px 50px 2px;
+    width: 98%;
+  }
+  .form {
+    display: none;
+  }
+  .mob{
+    display: block;
+    font-size: 45px;
+  }
+}

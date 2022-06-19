@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Syne+Tactile&family=Ubuntu&display=swap");
+$blue: #1875f0;
+$text_zaglowki: #666666;
+$text: #808080;
+$text_link:#b8b8b8;
+%mixin-card_heafer-footer {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+  background-color: #ffffff;
+}
+%mixin-card {
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.18);
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+%mixin-card_elements {
+  box-shadow: 0 0px 10px $text;
+  border-radius: 6px;
+  background-color: inherit;
+}
+%mixin-card_flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

@@ -1,0 +1,12 @@
+@use '../base/variables' as v;
+header {
+  padding: 25px;
+  @extend %mixin-card_heafer-footer;
+
+}
+h1 {
+    color: v.$text_zaglowki;
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+}

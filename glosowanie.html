@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Głosowanie</title>
+</head>
+<body class="site-body">
+    <main>
+        <section class="zaglowek">
+          <h2>Głosowanie</h2>
+          <div class="zaglowek__right">
+              <div class="zaglowek__item">
+                <a href="https://docs.google.com/spreadsheets/d/1mLA9bNvbs5Ls2zb3SZLK9va_7eq_6JdGh6qKubQdAdQ/edit#gid=0"><strong>Głosowanie</strong></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="flexbox">
+          <div class="container">
+            <label class="form__label mob">Głosowanie odbywa się na komputerze.</label>
+            <form class="form" id="google-sheets">
+                <label class="form__label kandydat none">Wprowadź Imię i Nazwisko swojego kandydata</label>
+                <input required id="code" name="Kandydat" class="form__item kandydat none" autofocus="autofocus" type="text" autocomplete="off" placeholder="Imę i Nazwisko twojego Kandydata" ><br>
+                <label class="form__label kandydat none">Zaznacz skąd głosujesz:</label>  
+                <div class="radio-div none">
+                     <div class="radio-button">
+                      <input required name="Salon_lub_Biuro" type="radio" class="radio-style kandydat" value="Salon">Salon 
+                    </div>
+                    <div class="radio-button">
+                      <input  name="Salon_lub_Biuro" type="radio" class="radio-style kandydat" value="Biuro">Biuro/Magazyn 
+                    </div>
+                    </div>
+                <input id="code" name="IP" class="none ip form__item"><br>
+                <input id="code" name="City" class="none city form__item"><br>
+                <input id="code" name="Org" class="none org form__item"><br>
+                <input id="code" name="Kod" class="none kod form__item"><br>
+
+                <label class="form__label ready" >Dziękujemy, już wybrałeś/łaś swojego kandydata.</label>
+                <button class="btn none">ZATWIERDŹ</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    <footer>
+        <div class="footer-width">
+          <div class="zaglowek__item">
+           <a href="https://www.venezia.pl/">@2022.VENEZIA | UNISONO</a>
+          </div>
+          <div class="zaglowek__right">
+              <div class="zaglowek__item">
+                <a href="https://docs.google.com/spreadsheets/d/1mLA9bNvbs5Ls2zb3SZLK9va_7eq_6JdGh6qKubQdAdQ/edit#gid=0"><strong>Głosowanie</strong></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+ 
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/g-form.js"></script>
+    <!-- <script src="js/invent.js"></script> -->
+    
+</body>
+</html>

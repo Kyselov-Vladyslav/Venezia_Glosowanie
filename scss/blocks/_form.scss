@@ -1,0 +1,101 @@
+@use "../base/variables" as v;
+
+
+.mob{
+  display: none;
+}
+.form {
+  @extend %mixin-card_flexbox;
+  width: 99%;
+  text-align: center;
+  &__label {
+    margin-bottom: 30px;
+    color: v.$text_zaglowki;
+    font-weight: 700;
+    font-size: 24px;
+    font-style: italic;
+  }
+  &__item {
+    @extend %mixin-card_elements;
+    text-align: center;
+    padding: 3%;
+    // text-transform:  uppercase;
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid v.$text_link;
+    margin-bottom: 15px;
+    font-size: 24px;
+
+    &:focus {
+      box-shadow: 0 0px 10px v.$blue;
+    }
+  }
+  .display_none_dodane, .display_none_nie_dodane {
+    display: none;
+  }
+  
+ 
+
+.th-style{
+  font-size: 30px;
+  font-weight: 900;
+}
+.radio-div{
+  @extend %mixin-card_flexbox;
+ 
+  width: 100%;
+  margin: 30px 0px;
+  flex-direction: row;
+  line-height: 3;
+  font-size: 30px;
+  font-weight: 900;
+  
+}
+.radio-button{
+  @extend %mixin-card_flexbox;
+  @extend %mixin-card_elements;
+    min-width: 30%;
+  padding: 20px 0px;
+  margin:0px 120px;
+
+}
+
+.radio-style{
+  width: 80px;
+  height: 80px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  border: 10px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+  &:checked {
+    border: 30px solid black;
+  }
+}
+.none{
+  display: none;
+}
+}
+.btn {
+  padding: 10px 25px;
+  margin-bottom: 50px;
+  outline: none;
+  background-color: v.$blue;
+  border-radius: 20px;
+  border: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 900;
+  transition: background-color 0.1s ease-in;
+  &:hover {
+    background-color: v.$text_zaglowki;
+  }
+}
+ .none{
+  display: none;
+}

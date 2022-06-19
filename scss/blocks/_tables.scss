@@ -1,0 +1,15 @@
+@use "../base/variables" as v;
+.table{
+    width: 100%;
+}
+
+.dodano{
+    padding: 2%;
+}
+
+.dodawanie{
+    & td{
+        font-size: 25px;
+        font-weight: 600;
+    }
+}

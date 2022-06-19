@@ -1,0 +1,19 @@
+@use '../base/variables' as v;
+footer {
+  padding: 25px;
+  @extend %mixin-card_heafer-footer;
+  margin-top: 30px;
+}
+.footer-width {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.footer-width a {
+  font-size: 18px;
+  font-weight: 900;
+}
+.footer-width img {
+  width: 5%;
+}
